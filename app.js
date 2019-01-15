@@ -1,5 +1,4 @@
-// console.log('Connected');
-// Define UI Variables
+// Define UI Vars
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
 const clearBtn = document.querySelector('.clear-tasks');
@@ -8,3 +7,19 @@ const taskInput = document.querySelector('#task');
 // console.log(taskInput);
 
 // Load all event listeners
+loadEventListeners();
+
+// Load all event listeners
+function loadEventListeners() {
+    // Add task event
+    form.addEventListener('submit', addTask);
+}
+
+// Add Task
+function addTask(e) {
+    if (taskInput.value === '') {
+        alert('Add a task');
+    }
+}
+
+
