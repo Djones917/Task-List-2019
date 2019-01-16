@@ -21,7 +21,7 @@ function addTask(e) {
         alert('Add a task');
     } 
 
-    // Create li item
+    // Create li element
     const li = document.createElement('li');
     // Add class
     li.className = 'collection-item';
@@ -32,8 +32,8 @@ function addTask(e) {
     // Add class
     link.className = 'delete-item secondary-content';
     // Add icon html
-    link.innerHTML = '<i class="fa fa-remove"></i>'
-    // Append link to li
+    link.innerHTML = '<i class="fa fa-remove"></i>';
+    // Append the link to li
     li.appendChild(link);
     // Append li to ul
     taskList.appendChild(li);
