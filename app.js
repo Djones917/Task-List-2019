@@ -44,3 +44,5 @@ function addTask(e) {
 }
 
 
+// Delete this and console.log below just trying to figure out why debugger is not working!
+//console.log(addTask);
