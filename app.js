@@ -28,13 +28,13 @@ function addTask(e) {
     // Create text node and append to li
     li.appendChild(document.createTextNode(taskInput.value));
     // Creat new link element
-    const link = doucment.createElement('a');
+    //const link = doucment.createElement('a');
     // Add class
-    link.className = 'delete-item secondary-content';
+    //link.className = 'delete-item secondary-content';
     // Add icon html
-    link.innerHTML = '<i class="fa fa-remove"></i>';
+    //link.innerHTML = '<i class="fa fa-remove"></i>';
     // Append the link to li
-    li.appendChild(link);
+    //li.appendChild(link);
     // Append li to ul
     taskList.appendChild(li);
     // clear input
@@ -44,6 +44,5 @@ function addTask(e) {
 }
 
 
-// For some reason li and link say they are not defined!
 // Delete this and console.log below just trying to figure out why debugger is not working!
 //console.log(addTask);
