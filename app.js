@@ -44,5 +44,6 @@ function addTask(e) {
 }
 
 
+// For some reason li and link say they are not defined!
 // Delete this and console.log below just trying to figure out why debugger is not working!
 //console.log(addTask);
