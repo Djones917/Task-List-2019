@@ -13,7 +13,10 @@ loadEventListeners();
 function loadEventListeners() {
     // Add task event
     form.addEventListener('submit', addTask);
+    // Remove task event
     taskList>addEventListener('click', removeTask);
+    // Clear task event
+    clearBtn.addEventListener('click', clearTasks);
 }
 
 // Add Task
@@ -45,7 +48,7 @@ function addTask(e) {
 }
 
 
-
+// Remove Task
 function removeTask(e) {
     if(e.target.parentElement.classList.contains('delete-item')) {
         if(confirm('Are you sure?')) {
@@ -55,5 +58,13 @@ function removeTask(e) {
 }
 
 
+// Clear Tasks
+function clearTasks() {
+    // taskList.innerHTML = '';
+    // Faster way to do it
+    while (taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
+    }
+} 
 // Delete this and console.log below just trying to figure out why debugger is not working!
 //console.log(addTask);
