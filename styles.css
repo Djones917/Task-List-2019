@@ -1,5 +1,6 @@
 body {
-    background-color: blue;
+    font-family: 'Raleway', sans-serif;
+    /*background-color: blue;*/
 }
 
 
@@ -18,3 +19,4 @@ i {
     margin-left: 20px;
 }
 /* end of css styles from app.js */
+
