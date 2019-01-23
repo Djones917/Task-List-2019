@@ -1,6 +1,6 @@
 body {
     font-family: 'Raleway', sans-serif;
-    /*background-color: blue;*/
+    /*background-color: #0300D9;*/
 }
 
 
@@ -8,6 +8,9 @@ body {
     background-color: white;
     border: 2px solid grey;
     border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.31);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.31);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.31);
 }
 
 /* css styles from app.js */
